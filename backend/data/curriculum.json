@@ -1,0 +1,231 @@
+{
+  "topics": [
+    {
+      "id": "intro-ai",
+      "title": "Introduction to Artificial Intelligence",
+      "prerequisites": [],
+      "order": 1,
+      "content": {
+        "foundational": {
+          "text": "Artificial Intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems. These processes include learning (the acquisition of information and rules for using it), reasoning (using rules to reach approximate or definite conclusions), and self-correction.\n\nThe field of AI was formally founded in 1956 at the Dartmouth Conference, where the term 'Artificial Intelligence' was first coined by John McCarthy. Since then, AI has evolved through several phases — from early rule-based expert systems to modern deep learning architectures.\n\nAI can be broadly categorized into:\n• Narrow AI (Weak AI): Systems designed for specific tasks (e.g., Siri, chess engines)\n• General AI (Strong AI): Hypothetical systems with human-level understanding\n• Super AI: Theoretical AI surpassing human intelligence",
+          "video": "https://www.youtube.com/watch?v=ad79nYk2keg",
+          "quiz": [
+            {"question": "What year was the term 'Artificial Intelligence' formally coined?", "options": ["1943", "1950", "1956", "1960"], "answer": 2},
+            {"question": "Which type of AI is designed for a specific task?", "options": ["General AI", "Super AI", "Narrow AI", "Hybrid AI"], "answer": 2},
+            {"question": "Who coined the term 'Artificial Intelligence'?", "options": ["Alan Turing", "John McCarthy", "Marvin Minsky", "Herbert Simon"], "answer": 1}
+          ]
+        },
+        "basic": {
+          "text": "AI systems rely on several foundational components:\n\n1. Knowledge Representation: How AI stores and organizes information. Common approaches include semantic networks, frames, and ontologies.\n\n2. Search Algorithms: Methods for exploring solution spaces — Breadth-First Search (BFS), Depth-First Search (DFS), A* search, and heuristic methods.\n\n3. Logic and Reasoning: Propositional logic, predicate logic, and fuzzy logic enable AI systems to draw conclusions from known facts.\n\n4. Planning: AI planning involves generating sequences of actions to achieve goals, used in robotics, game AI, and autonomous vehicles.\n\nThe Turing Test, proposed by Alan Turing in 1950, remains a famous benchmark — if a machine can fool a human into thinking it's also human during conversation, it's considered 'intelligent'.",
+          "video": "https://www.youtube.com/watch?v=JMUxmLyrhSk",
+          "quiz": [
+            {"question": "What does BFS stand for in AI search?", "options": ["Best-First Search", "Breadth-First Search", "Binary-First Search", "Branch-First Search"], "answer": 1},
+            {"question": "Who proposed the Turing Test?", "options": ["John McCarthy", "Alan Turing", "Marvin Minsky", "Claude Shannon"], "answer": 1}
+          ]
+        },
+        "intermediate": {
+          "text": "Modern AI is built on several key paradigms:\n\nSymbolic AI (GOFAI): Uses explicit rules and logic. Expert systems like MYCIN (medical diagnosis) and DENDRAL (chemical analysis) were early successes. Limitations: brittle, cannot handle uncertainty well.\n\nStatistical AI: Uses probability theory and statistics. Bayesian networks, Hidden Markov Models (HMMs), and probabilistic graphical models. Better at handling uncertainty but requires domain knowledge.\n\nConnectionist AI (Neural Networks): Inspired by biological neurons. Multi-layer perceptrons learn from data. Breakthrough: backpropagation algorithm (1986, Rumelhart et al.) enabled training deep networks.\n\nEvolutionary AI: Genetic algorithms and evolutionary strategies optimize solutions through selection, crossover, and mutation — mimicking Darwinian evolution.\n\nThe AI Winter (1974-1980, 1987-1993): Periods of reduced funding and interest due to unmet expectations. Modern AI avoided this through practical, incremental advances (machine learning, big data).",
+          "video": "https://www.youtube.com/watch?v=aircAruvnKk",
+          "quiz": [
+            {"question": "What was MYCIN?", "options": ["A search algorithm", "A medical expert system", "A neural network", "A programming language"], "answer": 1},
+            {"question": "What algorithm enabled training deep neural networks?", "options": ["Gradient descent", "Backpropagation", "A* search", "Minimax"], "answer": 1}
+          ]
+        },
+        "advanced": {
+          "text": "Advanced AI Topics:\n\nTransformer Architecture: Introduced by Vaswani et al. (2017) in 'Attention Is All You Need'. Self-attention mechanisms allow parallel processing of sequences. Foundation of GPT, BERT, and modern LLMs.\n\nReinforcement Learning: Agent learns by interacting with environment. Key algorithms: Q-Learning, Deep Q-Networks (DQN), Proximal Policy Optimization (PPO). AlphaGo's victory over Lee Sedol (2016) was a landmark achievement.\n\nGenerative AI: GANs (Goodfellow, 2014), VAEs, and diffusion models create new content. Applications: art generation, drug discovery, synthetic data.\n\nExplainable AI (XAI): Making AI decisions interpretable. Techniques: LIME, SHAP, attention visualization. Critical for healthcare, finance, and legal applications.\n\nAI Ethics: Bias, fairness, accountability, and transparency. The EU AI Act and similar regulations are shaping responsible AI development.",
+          "video": "https://www.youtube.com/watch?v=SczraSQQGFk",
+          "quiz": [
+            {"question": "What paper introduced the Transformer architecture?", "options": ["ImageNet", "Attention Is All You Need", "Playing Atari with Deep RL", "Generative Adversarial Nets"], "answer": 1}
+          ]
+        },
+        "expert": {
+          "text": "Frontier AI Research:\n\nMultimodal AI: Systems processing text, images, audio, and video simultaneously (GPT-4V, Gemini). Cross-modal reasoning and generation.\n\nWorld Models: AI that builds internal representations of the physical world. Yann LeCun's JEPA (Joint Embedding Predictive Architecture) represents a shift from generative to predictive self-supervised learning.\n\nAI Agents: Autonomous systems that plan, execute, and adapt — using tool use, memory, and multi-step reasoning. AutoGPT, LangChain agents, and agentic coding assistants.\n\nNeuromorphic Computing: Hardware designed to mimic brain architecture. Intel's Loihi, IBM's TrueNorth. Spiking neural networks (SNNs) for energy-efficient inference.\n\nQuantum AI: Quantum machine learning algorithms (QAOA, VQE) that could exponentially speed up certain AI tasks. Currently in early research phase.",
+          "video": "https://www.youtube.com/watch?v=WXuK6gekU1Y",
+          "quiz": [
+            {"question": "What is JEPA?", "options": ["A quantum algorithm", "Joint Embedding Predictive Architecture", "A type of transformer", "A reinforcement learning method"], "answer": 1}
+          ]
+        }
+      }
+    },
+    {
+      "id": "ml-basics",
+      "title": "Machine Learning Fundamentals",
+      "prerequisites": ["intro-ai"],
+      "order": 2,
+      "content": {
+        "foundational": {
+          "text": "Machine Learning (ML) is a subset of AI that enables systems to learn and improve from experience without being explicitly programmed. Instead of writing rules manually, ML algorithms find patterns in data.\n\nThree main types of Machine Learning:\n\n1. Supervised Learning: The algorithm learns from labeled data (input-output pairs).\n   • Classification: Predicting categories (spam/not spam, cat/dog)\n   • Regression: Predicting continuous values (house prices, temperature)\n   Examples: Linear Regression, Decision Trees, Support Vector Machines\n\n2. Unsupervised Learning: The algorithm finds hidden patterns in unlabeled data.\n   • Clustering: Grouping similar items (customer segments)\n   • Dimensionality Reduction: Simplifying complex data (PCA, t-SNE)\n   Examples: K-Means, DBSCAN, Hierarchical Clustering\n\n3. Reinforcement Learning: An agent learns by trial and error, receiving rewards for good actions.\n   Examples: Game-playing AI, robot navigation, trading bots",
+          "video": "https://www.youtube.com/watch?v=ukzFI9rgwfU",
+          "quiz": [
+            {"question": "What type of ML uses labeled data?", "options": ["Unsupervised", "Reinforcement", "Supervised", "Semi-supervised"], "answer": 2},
+            {"question": "K-Means is an example of what type of learning?", "options": ["Supervised", "Unsupervised", "Reinforcement", "Transfer"], "answer": 1}
+          ]
+        },
+        "basic": {
+          "text": "Key ML Concepts:\n\nFeatures and Labels: Features are input variables (x₁, x₂, ..., xₙ). Labels are the target output (y).\n\nTraining and Testing: Data is split into training set (typically 80%) for learning and test set (20%) for evaluation.\n\nOverfitting: Model memorizes training data but fails on new data. Solutions: regularization, cross-validation, more data.\n\nUnderfitting: Model is too simple to capture patterns. Solutions: more complex model, feature engineering.\n\nBias-Variance Tradeoff: High bias = underfitting. High variance = overfitting. Goal: find the sweet spot.\n\nEvaluation Metrics:\n• Accuracy: Correct predictions / Total predictions\n• Precision: True Positives / (True Positives + False Positives)\n• Recall: True Positives / (True Positives + False Negatives)\n• F1 Score: Harmonic mean of Precision and Recall",
+          "video": "https://www.youtube.com/watch?v=Gv9_4yMHFhI",
+          "quiz": [
+            {"question": "What is overfitting?", "options": ["Model is too simple", "Model memorizes training data", "Model has high bias", "Model needs more features"], "answer": 1},
+            {"question": "What is the typical train/test split ratio?", "options": ["50/50", "60/40", "80/20", "90/10"], "answer": 2}
+          ]
+        },
+        "intermediate": {
+          "text": "Popular ML Algorithms:\n\nLinear Regression: Finds the best straight line (y = wx + b) through data points. Minimizes Mean Squared Error (MSE) using gradient descent.\n\nLogistic Regression: Despite the name, it's for classification. Uses sigmoid function to output probabilities between 0 and 1.\n\nDecision Trees: Splits data based on feature thresholds. Easy to interpret but prone to overfitting. Information Gain and Gini Impurity guide splits.\n\nRandom Forest: Ensemble of many decision trees. Each tree votes, majority wins. Reduces overfitting through bagging (Bootstrap Aggregating).\n\nSupport Vector Machines (SVM): Finds the hyperplane that maximizes margin between classes. Kernel trick enables non-linear classification.\n\nK-Nearest Neighbors (KNN): Classifies based on the K closest training examples. Simple but computationally expensive for large datasets.\n\nGradient Boosting: Sequentially builds trees, each correcting the errors of the previous one. XGBoost, LightGBM are popular implementations.",
+          "video": "https://www.youtube.com/watch?v=NWONeJKn6kc",
+          "quiz": [
+            {"question": "What does Random Forest use to reduce overfitting?", "options": ["Dropout", "Bagging", "Pruning", "Regularization"], "answer": 1},
+            {"question": "What function does Logistic Regression use?", "options": ["ReLU", "Softmax", "Sigmoid", "Tanh"], "answer": 2}
+          ]
+        },
+        "advanced": {
+          "text": "Advanced ML:\n\nFeature Engineering: Creating new features from raw data. Techniques: polynomial features, one-hot encoding, binning, interaction terms. Often more impactful than model selection.\n\nHyperparameter Tuning: Grid Search, Random Search, Bayesian Optimization (Optuna, Hyperopt). Finding optimal learning rate, regularization strength, tree depth, etc.\n\nCross-Validation: K-Fold CV splits data into K parts, trains on K-1, tests on 1, rotates. Stratified K-Fold for imbalanced datasets.\n\nPipelines: Chaining preprocessing steps with models. sklearn.pipeline.Pipeline ensures consistent transforms during training and prediction.\n\nModel Interpretability: Feature importance (permutation, SHAP values). Partial Dependence Plots (PDP). Understanding why a model makes specific predictions.",
+          "video": "https://www.youtube.com/watch?v=pYxNSUDSFH4",
+          "quiz": [
+            {"question": "What is K-Fold Cross-Validation?", "options": ["Splitting data into K equal parts", "Using K different models", "Training for K epochs", "Using K features"], "answer": 0}
+          ]
+        },
+        "expert": {
+          "text": "Cutting-Edge ML:\n\nAutoML: Automated machine learning — tools like Auto-sklearn, H2O AutoML, and Google AutoML automate model selection, feature engineering, and hyperparameter tuning.\n\nFederated Learning: Training models across decentralized devices without sharing raw data. Used by Google (Gboard predictions), Apple (Siri), and hospitals (medical imaging).\n\nFew-Shot Learning: Learning from very few examples. Meta-learning (learning to learn). Prototypical networks, MAML (Model-Agnostic Meta-Learning).\n\nGraph Neural Networks (GNNs): ML on graph-structured data. Applications: social networks, molecular property prediction, recommendation systems. GCN, GAT, GraphSAGE.\n\nCausal ML: Moving beyond correlation to causation. Do-calculus, instrumental variables, treatment effect estimation. Critical for healthcare and policy decisions.",
+          "video": "https://www.youtube.com/watch?v=aircAruvnKk",
+          "quiz": [
+            {"question": "What is Federated Learning?", "options": ["Learning on the cloud", "Training without sharing raw data", "Using multiple GPUs", "Transfer learning"], "answer": 1}
+          ]
+        }
+      }
+    },
+    {
+      "id": "neural-networks",
+      "title": "Neural Networks & Deep Learning",
+      "prerequisites": ["ml-basics"],
+      "order": 3,
+      "content": {
+        "foundational": {
+          "text": "Neural Networks are computing systems inspired by the biological neural networks in our brains. They consist of interconnected nodes (neurons) organized in layers.\n\nBasic Structure:\n• Input Layer: Receives the raw data (features)\n• Hidden Layers: Process information through weighted connections\n• Output Layer: Produces the final prediction\n\nHow a Neuron Works:\n1. Each input is multiplied by a weight (w)\n2. All weighted inputs are summed: z = w₁x₁ + w₂x₂ + ... + wₙxₙ + b\n3. A bias (b) is added\n4. An activation function is applied: output = f(z)\n\nCommon Activation Functions:\n• Sigmoid: σ(z) = 1/(1+e⁻ᶻ) — outputs between 0 and 1\n• ReLU: f(z) = max(0, z) — most popular for hidden layers\n• Tanh: outputs between -1 and 1\n• Softmax: converts outputs to probabilities (for multi-class classification)",
+          "video": "https://www.youtube.com/watch?v=aircAruvnKk",
+          "quiz": [
+            {"question": "What are the three main layers in a neural network?", "options": ["Start, Middle, End", "Input, Hidden, Output", "First, Second, Third", "Source, Process, Sink"], "answer": 1},
+            {"question": "What is the most popular activation function for hidden layers?", "options": ["Sigmoid", "Tanh", "ReLU", "Softmax"], "answer": 2}
+          ]
+        },
+        "basic": {
+          "text": "Training Neural Networks:\n\nForward Propagation: Data flows from input to output through the network. Each neuron computes its weighted sum and applies the activation function.\n\nLoss Function: Measures how wrong the prediction is.\n• MSE (Mean Squared Error): For regression\n• Cross-Entropy: For classification\n\nBackpropagation: The key algorithm for training neural networks.\n1. Compute the loss (how far off the prediction is)\n2. Calculate gradients of the loss with respect to each weight using the chain rule\n3. Update weights in the direction that reduces the loss\n\nGradient Descent: The optimization algorithm.\n• Learning Rate (α): How big each weight update step is\n• Batch Gradient Descent: Uses all data for each update\n• Stochastic Gradient Descent (SGD): Uses one sample at a time\n• Mini-Batch GD: Uses small batches — best of both worlds\n\nEpochs: One complete pass through the entire training dataset.",
+          "video": "https://www.youtube.com/watch?v=IHZwWFHWa-w",
+          "quiz": [
+            {"question": "What does backpropagation do?", "options": ["Feeds data forward", "Calculates gradients", "Initializes weights", "Normalizes data"], "answer": 1}
+          ]
+        },
+        "intermediate": {
+          "text": "Deep Learning Architectures:\n\nConvolutional Neural Networks (CNNs): Designed for image/spatial data.\n• Convolutional layers: Apply learnable filters that detect features (edges, textures, patterns)\n• Pooling layers: Reduce spatial dimensions (max pooling, average pooling)\n• Used in: image classification (ImageNet), object detection (YOLO), face recognition\n• Famous architectures: LeNet, AlexNet, VGG, ResNet, EfficientNet\n\nRecurrent Neural Networks (RNNs): Designed for sequential/temporal data.\n• Maintain hidden state that captures sequence history\n• Problem: Vanishing/exploding gradients for long sequences\n• LSTM (Long Short-Term Memory): Solves vanishing gradient using gates (forget, input, output)\n• GRU (Gated Recurrent Unit): Simplified version of LSTM\n• Used in: language modeling, speech recognition, time series prediction",
+          "video": "https://www.youtube.com/watch?v=YRhxdVk_sIs",
+          "quiz": [
+            {"question": "What type of neural network is best for images?", "options": ["RNN", "CNN", "GAN", "LSTM"], "answer": 1},
+            {"question": "What problem do LSTMs solve?", "options": ["Overfitting", "Vanishing gradients", "Slow training", "Data imbalance"], "answer": 1}
+          ]
+        },
+        "advanced": {
+          "text": "Modern Deep Learning:\n\nTransformers: The architecture behind modern AI revolution.\n• Self-attention: Each token attends to all other tokens in the sequence\n• Multi-head attention: Multiple attention computations in parallel\n• Positional encoding: Adds position information since transformers don't have inherent sequence awareness\n• GPT (Generative Pre-trained Transformer): Decoder-only, autoregressive\n• BERT (Bidirectional Encoder Representations): Encoder-only, masked language modeling\n\nTransfer Learning: Pre-train on large dataset, fine-tune on specific task.\n• ImageNet pre-training for computer vision\n• Language model pre-training for NLP (GPT, BERT)\n• Dramatically reduces data requirements and training time\n\nRegularization Techniques:\n• Dropout: Randomly deactivate neurons during training\n• BatchNorm: Normalize layer inputs for stable training\n• Weight Decay (L2 Regularization): Penalize large weights",
+          "video": "https://www.youtube.com/watch?v=wjZofJX0v4M",
+          "quiz": [
+            {"question": "What mechanism is central to Transformers?", "options": ["Convolution", "Recurrence", "Self-attention", "Pooling"], "answer": 2}
+          ]
+        },
+        "expert": {
+          "text": "Frontier Deep Learning:\n\nDiffusion Models: State-of-the-art generative models. Add noise to data progressively, then learn to denoise. Stable Diffusion, DALL-E 3, Midjourney. Mathematical framework: score matching and stochastic differential equations.\n\nState Space Models (SSMs): Mamba architecture — alternative to transformers with linear scaling. Selective state spaces for efficient sequence modeling.\n\nMixture of Experts (MoE): Sparse activation — only a subset of parameters are used per input. GPT-4 and Mixtral use MoE. Dramatically reduces compute while maintaining quality.\n\nNeural Architecture Search (NAS): Using AI to design better neural network architectures. EfficientNet was discovered through NAS. DARTS, ProxylessNAS for efficient search.\n\nNeural Scaling Laws: Chinchilla scaling laws (Hoffmann et al., 2022). Optimal model size vs. training data trade-offs. Predicting model performance from compute budget.",
+          "video": "https://www.youtube.com/watch?v=HoKDTa5jHvg",
+          "quiz": [
+            {"question": "What AI architecture uses sparse activation?", "options": ["CNN", "LSTM", "Mixture of Experts", "GAN"], "answer": 2}
+          ]
+        }
+      }
+    },
+    {
+      "id": "nlp",
+      "title": "Natural Language Processing",
+      "prerequisites": ["neural-networks"],
+      "order": 4,
+      "content": {
+        "foundational": {
+          "text": "Natural Language Processing (NLP) is the branch of AI that helps computers understand, interpret, and generate human language. It bridges the gap between human communication and computer understanding.\n\nCommon NLP Tasks:\n• Text Classification: Categorizing text (spam detection, sentiment analysis)\n• Named Entity Recognition (NER): Identifying names, dates, locations in text\n• Machine Translation: Converting text between languages (Google Translate)\n• Question Answering: Automatically answering questions from text\n• Text Summarization: Creating concise summaries of longer documents\n• Sentiment Analysis: Determining if text is positive, negative, or neutral\n\nBasic NLP Pipeline:\n1. Tokenization: Splitting text into words/subwords/characters\n2. Stopword Removal: Removing common words (the, is, at)\n3. Stemming/Lemmatization: Reducing words to root form\n4. Feature Extraction: Bag of Words, TF-IDF\n5. Model: Classify, generate, or transform",
+          "video": "https://www.youtube.com/watch?v=fOvTtapxa9c",
+          "quiz": [
+            {"question": "What is tokenization?", "options": ["Encrypting text", "Splitting text into units", "Translating text", "Summarizing text"], "answer": 1},
+            {"question": "What does NER stand for?", "options": ["Neural Entity Recognition", "Named Entity Recognition", "Natural Entity Retrieval", "Named Element Recognition"], "answer": 1}
+          ]
+        },
+        "basic": {
+          "text": "Text Representation:\n\nBag of Words (BoW): Represents text as word frequency vectors. Simple but loses word order.\n\nTF-IDF (Term Frequency-Inverse Document Frequency): Weighs words by importance. Rare words get higher weight. Common words get lower weight.\n\nWord Embeddings: Dense vector representations that capture semantic meaning.\n• Word2Vec (Mikolov, 2013): Skip-gram and CBOW models. 'King - Man + Woman = Queen'\n• GloVe (Pennington, 2014): Global Vectors for Word Representation. Trained on word co-occurrence statistics.\n• FastText (Bojanowski, 2017): Handles out-of-vocabulary words using subword information.\n\nKey Insight: Words with similar meanings have similar vector representations. This allows mathematical operations on language!",
+          "video": "https://www.youtube.com/watch?v=viZrOnJclY0",
+          "quiz": [
+            {"question": "What does TF-IDF measure?", "options": ["Word count", "Word importance", "Sentence length", "Grammar correctness"], "answer": 1}
+          ]
+        },
+        "intermediate": {
+          "text": "Modern NLP with Transformers:\n\nBERT (Google, 2018): Bidirectional Encoder Representations from Transformers.\n• Pre-trained on masked language modeling + next sentence prediction\n• Fine-tune for any downstream task (classification, QA, NER)\n• Revolutionized NLP benchmarks (GLUE, SQuAD)\n\nGPT Series (OpenAI): Generative Pre-trained Transformers.\n• GPT-1 (2018): Showed unsupervised pre-training works\n• GPT-2 (2019): 1.5B parameters, scary-good text generation\n• GPT-3 (2020): 175B parameters, few-shot learning via prompting\n• GPT-4 (2023): Multimodal (text + images), reasoning capabilities\n\nKey NLP Libraries:\n• Hugging Face Transformers: 100K+ pre-trained models\n• spaCy: Industrial-strength NLP\n• NLTK: Educational NLP toolkit\n• LangChain: Building LLM applications",
+          "video": "https://www.youtube.com/watch?v=xI0HHN5XKDo",
+          "quiz": [
+            {"question": "How many parameters does GPT-3 have?", "options": ["1.5B", "10B", "175B", "1T"], "answer": 2}
+          ]
+        },
+        "advanced": {
+          "text": "Advanced NLP:\n\nPrompt Engineering: Designing effective prompts for LLMs. Zero-shot, few-shot, chain-of-thought prompting. System prompts, role-playing, structured output.\n\nRetrieval-Augmented Generation (RAG): Combining retrieval (search) with generation (LLMs). Steps: 1) Embed documents into vectors, 2) Retrieve relevant chunks, 3) Feed to LLM as context.\n\nFine-tuning LLMs: LoRA (Low-Rank Adaptation), QLoRA for efficient fine-tuning. RLHF (Reinforcement Learning from Human Feedback) for alignment.\n\nText-to-SQL: Converting natural language queries to database queries. Spider benchmark, DIN-SQL, C3 framework.\n\nMultilingual NLP: XLM-R, mBERT for cross-lingual understanding. Zero-shot transfer: train on English, test on other languages.",
+          "video": "https://www.youtube.com/watch?v=5MaWmXwxFNQ",
+          "quiz": [
+            {"question": "What does RAG stand for?", "options": ["Random Access Generation", "Retrieval-Augmented Generation", "Recursive Algorithm Generation", "Real-time AI Generation"], "answer": 1}
+          ]
+        },
+        "expert": {
+          "text": "Frontier NLP:\n\nConstitutional AI (Anthropic): Training AI to be helpful, harmless, and honest using AI-generated feedback instead of human labels.\n\nLong Context Models: Extending context windows to 100K+ tokens. RoPE, ALiBi, Ring Attention. Challenges: attention is O(n²), memory scales linearly.\n\nStructured Generation: Constraining LLM output to valid JSON, SQL, code. Grammar-guided decoding, constrained beam search.\n\nLLM Reasoning: Chain-of-Thought (CoT), Tree-of-Thought (ToT), Self-consistency. Verifiers and process reward models for mathematical reasoning.\n\nMultimodal Language Models: GPT-4V, Gemini, LLaVA. Vision-language understanding, document parsing, visual question answering.",
+          "video": "https://www.youtube.com/watch?v=zizonToFXDs",
+          "quiz": [
+            {"question": "What technique improves LLM reasoning?", "options": ["Dropout", "Chain-of-Thought", "Batch normalization", "Data augmentation"], "answer": 1}
+          ]
+        }
+      }
+    },
+    {
+      "id": "computer-vision",
+      "title": "Computer Vision",
+      "prerequisites": ["neural-networks"],
+      "order": 5,
+      "content": {
+        "foundational": {
+          "text": "Computer Vision (CV) is the field of AI that enables machines to interpret and understand visual information from the world — images and videos.\n\nCore CV Tasks:\n• Image Classification: What is in this image? (cat, dog, car)\n• Object Detection: Where are objects in the image? (bounding boxes)\n• Semantic Segmentation: Label every pixel (road, sky, person)\n• Instance Segmentation: Separate individual objects of the same class\n• Pose Estimation: Detect human body keypoints\n• Image Generation: Create new images (DALL-E, Stable Diffusion)\n\nHow Computers See:\n• Images are grids of pixels (e.g., 224×224×3 for RGB)\n• Each pixel has values 0-255 for Red, Green, Blue channels\n• A 224×224 color image = 150,528 numbers!\n• The challenge: extracting meaningful patterns from raw pixels",
+          "video": "https://www.youtube.com/watch?v=-4E2-0sxVUM",
+          "quiz": [
+            {"question": "What does object detection do?", "options": ["Classifies the whole image", "Finds and locates objects", "Generates new images", "Removes backgrounds"], "answer": 1}
+          ]
+        },
+        "basic": {
+          "text": "Image Processing Basics:\n\nConvolution: Sliding a small filter (kernel) across the image. Detects features like edges, corners, and textures.\n\nCommon Filters:\n• Edge Detection: Sobel, Canny — finds boundaries between regions\n• Blur: Gaussian blur smooths images, reduces noise\n• Sharpen: Enhances edges and fine details\n\nColor Spaces: RGB (display), HSV (hue/saturation/value), Grayscale (single channel).\n\nImage Augmentation: Creating variations of training images.\n• Flip, rotate, zoom, crop\n• Color jittering, brightness adjustment\n• Cutout, mixup, CutMix\n• Critical for preventing overfitting in small datasets\n\nOpenCV: The most popular computer vision library. Supports image loading, processing, feature detection, and video analysis. Available in Python, C++, Java.",
+          "video": "https://www.youtube.com/watch?v=oXlwWbU8l2o",
+          "quiz": [
+            {"question": "What does convolution do in image processing?", "options": ["Compresses images", "Detects features using filters", "Changes color space", "Resizes images"], "answer": 1}
+          ]
+        },
+        "intermediate": {
+          "text": "Deep Learning for Computer Vision:\n\nCNN Architectures Evolution:\n• LeNet-5 (1998): First successful CNN, digit recognition\n• AlexNet (2012): Won ImageNet, started deep learning revolution\n• VGG (2014): Showed deeper = better (16-19 layers)\n• GoogLeNet/Inception (2014): Inception modules, 22 layers\n• ResNet (2015): Skip connections, 152+ layers possible\n• EfficientNet (2019): NAS-designed, best accuracy/efficiency tradeoff\n\nObject Detection:\n• R-CNN → Fast R-CNN → Faster R-CNN: Region-based detectors\n• YOLO (You Only Look Once): Real-time detection, single pass\n• SSD (Single Shot Detector): Multiple scales in single forward pass\n\nTransfer Learning in CV:\n1. Take a model pre-trained on ImageNet (1M images, 1000 classes)\n2. Replace the last classification layer\n3. Fine-tune on your specific dataset\n4. Works with as few as 100-1000 images!",
+          "video": "https://www.youtube.com/watch?v=WbZSPjttEkQ",
+          "quiz": [
+            {"question": "Which architecture introduced skip connections?", "options": ["VGG", "AlexNet", "ResNet", "LeNet"], "answer": 2}
+          ]
+        },
+        "advanced": {
+          "text": "Advanced Computer Vision:\n\nVision Transformers (ViT): Applying transformer architecture to images.\n• Split image into patches (16×16)\n• Treat patches like tokens in NLP\n• Self-attention across all patches\n• Competitive with CNNs when pre-trained on large datasets\n\nGenerative Models for Images:\n• GANs: Generator vs. Discriminator adversarial training\n• StyleGAN: High-quality face generation with style control\n• Diffusion Models: State-of-the-art image generation (Stable Diffusion, DALL-E)\n\n3D Computer Vision:\n• Depth Estimation: Monocular and stereo depth prediction\n• Point Cloud Processing: PointNet, PointNet++ for 3D data\n• NeRF (Neural Radiance Fields): 3D scene reconstruction from 2D images\n• 3D Gaussian Splatting: Real-time novel view synthesis",
+          "video": "https://www.youtube.com/watch?v=NcZsDKhFWFE",
+          "quiz": [
+            {"question": "How does ViT process images?", "options": ["Pixel by pixel", "As patches like tokens", "Using convolution only", "Through recurrence"], "answer": 1}
+          ]
+        },
+        "expert": {
+          "text": "Frontier Computer Vision:\n\nFoundation Models for Vision: DINOv2, SAM (Segment Anything Model), CLIP (Contrastive Language-Image Pre-training). Zero-shot visual understanding through language supervision.\n\nVideo Understanding: Video transformers (TimeSformer, ViViT). Action recognition, temporal modeling, video captioning. Long-form video understanding challenges.\n\nAutonomous Driving: Multi-sensor fusion (camera, LiDAR, radar). Bird's-eye-view (BEV) representation. End-to-end driving models. Tesla's pure vision approach vs. Waymo's sensor fusion.\n\nMedical Imaging AI: Retinal scan analysis, X-ray interpretation, MRI segmentation. FDA-approved AI diagnostic tools. Challenges: small datasets, class imbalance, interpretability requirements.",
+          "video": "https://www.youtube.com/watch?v=gn4nRCC9TwQ",
+          "quiz": [
+            {"question": "What can SAM (Segment Anything Model) do?", "options": ["Generate images", "Segment any object in any image", "Classify text", "Generate 3D models"], "answer": 1}
+          ]
+        }
+      }
+    }
+  ],
+  "difficulty_tiers": ["foundational", "basic", "intermediate", "advanced", "expert"],
+  "modalities": ["text", "video", "quiz"]
+}
