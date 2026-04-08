@@ -221,18 +221,9 @@ Each topic has 5 difficulty tiers (Foundational → Expert) and 3 content modali
 
 ---
 
-## 👥 Team
+## 👤 Author
 
-Built by Group 9, SCAI — VIT Bhopal University
-
-| Name | Registration |
-|------|-------------|
-| Yashwant Raj | 24BCY10176 |
-| Ankit Kumar | 24BCY10200 |
-| Sohom Bose | 24BCY10172 |
-| Deepayan Dey | 24BCY10068 |
-| Kumari Garima | 24BCY10240 |
-| Prakriti Verma | 24BHI10072 |
+Built by **Yashwant Raj** — SCAI, VIT Bhopal University (24BCY10176)
 
 ---
 
