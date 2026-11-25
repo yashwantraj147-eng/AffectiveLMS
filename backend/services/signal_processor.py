@@ -1,5 +1,4 @@
 """Signal Processor — Layer 1: Constructs feature vector from raw signals."""
-import numpy as np
 from services.sentiment_analyzer import SentimentService
 
 sentiment_service = SentimentService()

@@ -8,6 +8,7 @@ Uses a hybrid approach:
 Classifies into: Engaged | Fatigued | Confused | Frustrated | Flow-state
 """
 import numpy as np
+
 from services.signal_processor import get_session_history
 
 STATES = ["Engaged", "Fatigued", "Confused", "Frustrated", "Flow-state"]
@@ -174,7 +175,6 @@ def classify_emotion(session_id: str, current_features: list) -> dict:
 
     # Compute focus density from history
     if history:
-        engaged_count = sum(1 for _ in history[-10:])  # placeholder
         # Simple heuristic: avg sentiment and low re-edits = high focus
         recent = history[-min(10, len(history)):]
         avg_sentiment = np.mean([h[2] for h in recent])

@@ -1,6 +1,6 @@
 """Pydantic schemas for request/response models."""
+
 from pydantic import BaseModel
-from typing import Optional
 
 
 class SignalPayload(BaseModel):

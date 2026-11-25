@@ -3,8 +3,9 @@
 Selects optimal (topic, difficulty, modality) action given emotional state.
 Uses Beta-distributed priors for exploration-exploitation balance.
 """
-import numpy as np
 from collections import defaultdict
+
+import numpy as np
 
 DIFFICULTIES = ["foundational", "basic", "intermediate", "advanced", "expert"]
 MODALITIES = ["text", "video", "quiz"]
@@ -136,7 +137,7 @@ def get_adaptation(
                 action_type = "escalate"
             else:
                 new_difficulty = DIFFICULTIES[min(len(DIFFICULTIES) - 1, diff_idx + 1)]
-                reason = f"Completed all topics! Increasing difficulty."
+                reason = "Completed all topics! Increasing difficulty."
                 action_type = "escalate"
 
     elif action == "maintain":

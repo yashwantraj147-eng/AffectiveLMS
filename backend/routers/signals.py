@@ -1,8 +1,8 @@
 """Signals Router — Ingest behavioural data and return emotion classification."""
 from fastapi import APIRouter
-from models.schemas import SignalPayload, EmotionStateResponse
-from services.signal_processor import process_signal, get_interaction_count
+from models.schemas import EmotionStateResponse, SignalPayload
 from services.emotion_classifier import classify_emotion
+from services.signal_processor import get_interaction_count, process_signal
 
 router = APIRouter()
 

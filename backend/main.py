@@ -1,7 +1,7 @@
 """AffectiveLMS Backend — FastAPI Application"""
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers import signals, content, adapt
+from routers import adapt, content, signals
 
 app = FastAPI(
     title="AffectiveLMS API",
